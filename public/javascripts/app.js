@@ -14,7 +14,7 @@ $('#submitBtn').on('click', function(e){
     var username = $('input[name="username"]').val();
     var age = $('input[name="age"]').val();
 
-    $.ajax('/api/users', {
+    $.ajax('/api/users/send', {
         method: "POST",
         contentType: "application/json",
         data: JSON.stringify({

@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
  // res.send('respond with a resource');
 });
 
-router.post('/', function(req, res, next){
+router.post('/send', function(req, res, next){
   User.create(req.body, function(err, data){
     res.json(data);
   });
